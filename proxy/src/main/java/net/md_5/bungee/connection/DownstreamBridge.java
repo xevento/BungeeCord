@@ -232,6 +232,7 @@ public class DownstreamBridge extends PacketHandler
 
         if ( pluginMessage.getTag().equals( "MC|Brand" ) )
         {
+        	/*
             ByteBuf brand = Unpooled.wrappedBuffer( pluginMessage.getData() );
             String serverBrand = DefinedPacket.readString( brand );
             brand.release();
@@ -245,6 +246,7 @@ public class DownstreamBridge extends PacketHandler
             // changes in the packet are ignored so we need to send it manually
             con.unsafe().sendPacket( pluginMessage );
             throw CancelSendSignal.INSTANCE;
+            */
         }
 
         if ( pluginMessage.getTag().equals( "BungeeCord" ) )
