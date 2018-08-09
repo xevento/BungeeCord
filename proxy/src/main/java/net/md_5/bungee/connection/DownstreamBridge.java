@@ -230,6 +230,7 @@ public class DownstreamBridge extends PacketHandler
             throw CancelSendSignal.INSTANCE;
         }
 
+<<<<<<< HEAD
         if ( pluginMessage.getTag().equals( "MC|Brand" ) )
         {
         	/*
@@ -249,6 +250,8 @@ public class DownstreamBridge extends PacketHandler
             */
         }
 
+=======
+>>>>>>> 2aeb9f8f7ccd5e16c6d518124adfc07081f41347
         if ( pluginMessage.getTag().equals( "BungeeCord" ) )
         {
             ByteArrayDataOutput out = ByteStreams.newDataOutput();
